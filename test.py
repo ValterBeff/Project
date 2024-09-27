@@ -5,11 +5,10 @@ labirinto = [
     [0, 2, 0]
 ]
 
-# Posição [1,1] onde está o '5'
-posicao_x = 1
+posicao_x = 0
 posicao_y = 1
 
-# Função para verificar os quatro cantos ao redor de [1,1]
+# Função para verificar os quatro cantos ao redor
 def verificar_zeros_ao_redor(labirinto, x, y):
     direcoes = [
         (-1, 0),  # acima
@@ -39,3 +38,15 @@ if zeros_encontrados:
     print("Zeros encontrados nas posições:", zeros_encontrados)
 else:
     print("Nenhum zero encontrado ao redor de [1,1]")
+
+
+# Labirinto inicial
+labirinto = [
+    [7, 8, 9],
+    [4, 5, 6],
+    [1, 2, 3]
+]
+
+for x in range(len(labirinto)):
+    for y in range(len(labirinto[x])):
+        print(f"[linha: {x}, coluna: {y}] = {labirinto[x][y]}")
