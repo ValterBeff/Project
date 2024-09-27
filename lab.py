@@ -1,23 +1,14 @@
-lb = [[0, 0, 1, 0, 0, 0],
-      [0, 1, 1, 0, 1, 0],
-      [0, 1, 0, 0, 1, 0],
-      [0, 1, 1, 1, 1, 0],
-      [0, 0, 0, 1, 0, 0],
-      [0, 1, 1, 1, 0, 0],
-      [0, 1, 0, 1, 1, 0],
-      [0, 1, 0, 0, 0, 0]]
+lb = [
+    [0, 0, 1, 0, 0, 0],
+    [0, 1, 1, 0, 1, 0],
+    [0, 1, 0, 0, 1, 0],
+    [0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0, 0],
+    [0, 1, 1, 1, 0, 0],
+    [0, 1, 0, 1, 1, 0],
+    [0, 1, 0, 0, 0, 0]]
 
-test_lb = [[0, 0, 0, 0, 0, 1],
-      [0, 0, 0, 1, 1, 1],
-      [0, 0, 0, 1, 0, 1],
-      [0, 0, 1, 1, 0, 0],
-      [0, 0, 0, 1, 1, 0],
-      [0, 0, 0, 0, 1, 0],
-      [0, 1, 1, 1, 1, 0],
-      [0, 1, 0, 0, 0, 0]]
-
-
-
+'''
 def valor_labirinto(lista_desafio):
     encontrou_um = False
     encontrou_zero = False
@@ -29,7 +20,14 @@ def valor_labirinto(lista_desafio):
         elif lista_desafio[i] == 1 and encontrou_zero:
             lista_desafio[i] = 0  
     return lista_desafio
+'''
 
-for lista in lb:
-    print(valor_labirinto(lista))
+def index_lb():
+    for chave in lb:
+        for i, n  in enumerate(chave):
+            print(f'{i, n}\n')
+
+    
+
+index_lb()
 
