@@ -1,0 +1,23 @@
+cat <<EOF > .gitignore
+# Ignorar binários e compilados
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+
+# Ignorar arquivos da IDE
+*.dev
+*.layout
+*.cbp
+*.depend
+*.user
+
+# Ignorar arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Ignorar Makefiles automáticos
+Makefile.win
+EOF
