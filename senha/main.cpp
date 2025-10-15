@@ -12,7 +12,7 @@ int main() {
     int i = 0;
     char c;
 
-    // === 1. LEITURA DA SENHA CORRETA DO ARQUIVO ===
+    // === LEITURA DA SENHA CORRETA DO ARQUIVO ===
     arquivo = fopen("senha.txt", "r");
     if (arquivo == NULL) {
         printf("Erro: arquivo 'senha.txt' não encontrado!\n");
@@ -30,7 +30,7 @@ int main() {
     // Remove o '\n' do final da senha lida, caso exista
     senhaCorreta[strcspn(senhaCorreta, "\n")] = '\0';
 
-    // === 2. ENTRADA DA SENHA DO USUÁRIO ===
+    // === ENTRADA DA SENHA DO USUÁRIO ===
     printf("Digite a senha: ");
 
     i = 0;
@@ -60,7 +60,7 @@ int main() {
 
     printf("\n");
 
-    // === 3. COMPARAÇÃO DAS SENHAS ===
+    // === COMPARAÇÃO DAS SENHAS ===
     if (strcmp(senhaDigitada, senhaCorreta) == 0) {
         printf("Senha correta! Acesso permitido.\n");
     } else {
